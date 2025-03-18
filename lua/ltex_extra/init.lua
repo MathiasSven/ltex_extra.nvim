@@ -40,9 +40,9 @@ end
 function LtexExtra:GetLtexClient()
     local ltex_client = nil
     if vim.lsp.get_clients then
-        ltex_client = vim.lsp.get_clients({ name = 'ltex' })[1]
+        ltex_client = vim.lsp.get_clients({ name = 'ltex_plus' })[1]
     else
-        ltex_client = vim.lsp.get_active_clients({ name = 'ltex' })[1]
+        ltex_client = vim.lsp.get_active_clients({ name = 'ltex_plus' })[1]
     end
 
     if not ltex_client then
